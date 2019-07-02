@@ -6,7 +6,6 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.ljr.jetpack_navigation.R
 
 class MainActivity : AppCompatActivity() {
     lateinit var bottomNavigationView: BottomNavigationView
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initBottomNavigationView(bottomNavigationView: BottomNavigationView, navController: NavController) {
-bottomNavigationView.setupWithNavController(navController)
+        bottomNavigationView.setupWithNavController(navController)
     }
 
     private fun initWidget() {

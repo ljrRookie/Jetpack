@@ -9,21 +9,19 @@ import com.ljr.jetpack_navigation.R
 
 class LoginActivity : AppCompatActivity() {
 
-    //lateinit var navController: NavController
+    lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        /*val host:MyNavHostFragment = supportFragmentManager.findFragmentById(R.id.my_nav_host_fragment) as MyNavHostFragment
-        navController = host.navController*/
+        val host:NavHostFragment = supportFragmentManager.findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment
+        navController = host.navController
 
     }
 
     override fun onBackPressed() {
         super.onBackPressed()
-
-
-        //navController.navigateUp()
+        navController.navigateUp()
     }
 }
